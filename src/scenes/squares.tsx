@@ -6,6 +6,8 @@ export default makeScene2D(function* (view) {
   const squares = createRefArray<Rect>();
   const width = 28;
   const height = 16;
+  const size = 50;
+  const spacing = 10;
 
   view.add(
     <Layout>
@@ -21,9 +23,19 @@ export default makeScene2D(function* (view) {
             ref={squares}
             key={index.toString()}
             fill={"#CF4232"}
+            smoothCorners={true}
+            radius={2}
             size={50}
-            x={gridPos.x * 60 + 30 - (width * 60) / 2}
-            y={gridPos.y * 60 + 30 - (height * 60) / 2}
+            x={
+              gridPos.x * (size + spacing) +
+              (size + spacing) / 2 -
+              (width * (size + spacing)) / 2
+            }
+            y={
+              gridPos.y * (size + spacing) +
+              (size + spacing) / 2 -
+              (height * (size + spacing)) / 2
+            }
           />
         );
       })}
