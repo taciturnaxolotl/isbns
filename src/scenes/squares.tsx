@@ -1,5 +1,5 @@
-import { makeScene2D, Rect, Layout, Txt, Circle, hue } from "@motion-canvas/2d";
-import { all, createRefArray, makeRef, range } from "@motion-canvas/core";
+import { makeScene2D, Rect, Layout } from "@motion-canvas/2d";
+import { all, createRefArray, range, waitFor } from "@motion-canvas/core";
 import { generateGridCoordinates } from "../utils/coordinates";
 
 export default makeScene2D(function* (view) {
@@ -43,6 +43,7 @@ export default makeScene2D(function* (view) {
   );
 
   yield* all(
-    ...squares.map((square, i) => square.scale(0, 0.3).to(1, i * 0.005)),
+    ...squares.map((square, i) => square.scale(0, 0.3).to(1, i * 0.005 ** 1.2)),
   );
+  yield* waitFor(0.5);
 });
