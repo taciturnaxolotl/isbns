@@ -5,7 +5,8 @@
   "scripts": {
     "start": "vite",
     "serve": "vite",
-    "build": "tsc && vite build"
+    "build": "tsc && vite build",
+    "gif": "ffmpeg -i output/project.mp4 -vf \"fps=10,scale=680:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse\" -loop 0 .github/images/out.gif"
   },
   "dependencies": {
     "@motion-canvas/core": "^3.17.2",

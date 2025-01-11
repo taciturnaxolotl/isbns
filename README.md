@@ -13,6 +13,14 @@
 	<img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/master/.github/images/line-break-thin.svg" />
 </p>
 
+<p align="center">
+	<img src="https://raw.githubusercontent.com/taciturnaxolotl/isbns/master/.github/images/out.gif" />
+</p>
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/master/.github/images/line-break-thin.svg" />
+</p>
+
 ## What's this?
 
 I recently saw the Annie's archive bounty for ISBN visualization. I definetly don't think I could win the 10k prize but it was an interesting topic I decided to try and make a video visualization of how ISBNs work. Also I just realllllly wanted to play with [MotionCanvas](https://motioncanvas.io) ^-^
