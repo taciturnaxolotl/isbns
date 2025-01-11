@@ -1,5 +1,4 @@
 <h3 align="center">
-    <img src="https://raw.githubusercontent.com/taciturnaxolotl/isbns/master/.github/images/isbns.webp" width="200" alt="Logo"/><br/>
     <img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/master/.github/images/transparent.png" height="45" width="0px"/>
     <span>ISBNs</span>
     <img src="https://raw.githubusercontent.com/taciturnaxolotl/carriage/master/.github/images/transparent.png" height="30" width="0px"/>
